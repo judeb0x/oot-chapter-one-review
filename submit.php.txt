@@ -1,0 +1,28 @@
+<?php
+  // Connect to your database
+  $db = mysqli_connect('localhost', 'username', 'password', 'database');
+
+  // Check connection
+  if (!$db) {
+    throw new Exception('Connection failed: ' . mysqli_connect_error());
+  }
+
+  // Get the form data
+  $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+  $note = filter_input(INPUT_POST, 'note', FILTER_SANITIZE_STRING);
+  $character = filter_input(INPUT_POST, 'character', FILTER_SANITIZE_STRING);
+
+  // Validate form data
+  if (empty($name) || empty($note) || empty($character)) {
+    throw new Exception('Form data is invalid');
+  }
+
+  // Insert the form data into your database
+  $query = "INSERT INTO reviews (name, note, character) VALUES (?, ?, ?)";
+  $stmt = mysqli_prepare($db, $query);
+  mysqli_stmt_bind_param($stmt, 'sss', $name, $note, $character);
+  mysqli_stmt_execute($stmt);
+
+  // Close the database connection
+  mysqli_close($db);
+?>
