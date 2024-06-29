@@ -1,0 +1,126 @@
+body {
+  font-family: system-ui;
+   background-image: linear-gradient(to right, #e9daf0, #c8a4da);
+  color: #d4a373;
+  text-align: center;
+  width: 640px;
+  height: 2000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  max-height: 100vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+}
+
+button[type="submit"] {
+   position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+  width: 500px;
+  height: auto;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: #522A65 !important;
+  font-size: 3em !important;
+  font-family: 'Annie Use Your Telescope', cursive;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  word-spacing: -2px; 
+  line-height: 1;
+}
+
+.username {
+  color: #522A65 !important;
+  font-size: 1.5em;
+  padding-top: 10px;
+  width: 100%;
+  font-family: Schoolbell;
+  text-align: left;
+  background-color: #f4ecf9;
+  padding: 10px;
+  border: 0px solid #ccc;
+  width: 25em;
+}
+
+p, p1 {
+  color: #522A65 !important;
+  font-size: 1.5em;
+  padding-top: 10px;
+  width: 100%;
+  font-family: Schoolbell;
+  text-align: left;
+}
+
+p2 {
+  color: #522A65 !important;
+  font-size: 1em;
+  padding-top: 10px;
+  width: 100%;
+  font-family: Schoolbell;
+  text-align: left;
+  font-style: italic;
+}
+
+
+li {
+  color: #522A65 !important;
+  font-size: 1.5em;
+  width: 100%;
+  font-family: Schoolbell;
+  text-align: left;
+list-style-type: disc;
+}
+
+
+input[type="text"] {
+  width: 200px;
+  text-align: left;
+}
+
+.extra-info {
+  color: #522A65 !important;
+font-size: 1.5em;
+padding-top: 10px;
+width: auto;
+font-family: Proza Libre, sans-serif;
+text-align: left;
+}
+
+textarea {
+  height: 75px;
+  width: 400px;
+}
+
+.comments, .why-for-easiness, .add-adjective, .flaws, .plothole, .who-other {
+ color: #522A65 !important;
+font-size: 1.2em;
+padding-top: 10px;
+padding-left: 20px;
+width: auto;
+font-family: Proza Libre, sans-serif;
+text-align: left;
+font-style: italic;
+}
+
+span {
+ color: #8f729b !important;
+font-size: 1em;
+padding-top: 10px;
+width: auto;
+font-family: Proza Libre, sans-serif;
+text-align: left;
+font-style: italic;
+ 
+  
+  
+
+    
